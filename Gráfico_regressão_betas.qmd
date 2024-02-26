@@ -6,31 +6,23 @@ editor: visual
 ---
 
 ## O que faz?
+
 Configuração do ambiente e bibliotecas:
 
-set.seed(123) configura a semente do gerador de números aleatórios para que os resultados possam ser replicáveis.
-Carrega as bibliotecas tidyverse, broom e forcats, que são usadas para manipulação de dados, análise estatística e criação de gráficos.
+set.seed(123) configura a semente do gerador de números aleatórios para que os resultados possam ser replicáveis. Carrega as bibliotecas tidyverse, broom e forcats, que são usadas para manipulação de dados, análise estatística e criação de gráficos.
 
 Geração de dados simulados:
 
-Cria uma amostra de tamanho n = 100.
-Gera quatro variáveis (n_policiais_per_capita, qtd_delegacias_km2, taxa_desemprego, taxa_homicidios) com distribuição normal usando diferentes médias e desvios padrão.
-Modelagem estatística:
-Constrói um modelo de regressão linear (lm) para prever taxa_homicidios a partir das outras três variáveis geradas.
-Utiliza a função tidy do pacote broom para limpar os resultados do modelo, incluindo a opção de intervalos de confiança (conf.int = T).
-Visualização dos resultados:
-Cria um gráfico (ggplot) que mostra os coeficientes de regressão do modelo com intervalos de confiança.
-Filtra para não incluir o intercepto.
-Usa geom_point para plotar os pontos dos coeficientes e geom_errorbarh para as barras de erro horizontais.
-Adiciona uma linha vertical no x=0 com geom_vline.
-Personaliza os rótulos e o tema do gráfico com labs e theme_bw.
+Cria uma amostra de tamanho n = 100. Gera quatro variáveis (n_policiais_per_capita, qtd_delegacias_km2, taxa_desemprego, taxa_homicidios) com distribuição normal usando diferentes médias e desvios padrão. Modelagem estatística: Constrói um modelo de regressão linear (lm) para prever taxa_homicidios a partir das outras três variáveis geradas. Utiliza a função tidy do pacote broom para limpar os resultados do modelo, incluindo a opção de intervalos de confiança (conf.int = T). Visualização dos resultados: Cria um gráfico (ggplot) que mostra os coeficientes de regressão do modelo com intervalos de confiança. Filtra para não incluir o intercepto. Usa geom_point para plotar os pontos dos coeficientes e geom_errorbarh para as barras de erro horizontais. Adiciona uma linha vertical no x=0 com geom_vline. Personaliza os rótulos e o tema do gráfico com labs e theme_bw.
 
 Em resumo, o script simula dados, realiza uma regressão linear e visualiza os coeficientes do modelo resultante.
 
 ## Habilidades?
+
 Simular dados, conhecimento sobre regressão linear e gráficos
 
 ## Notas sobre pacotes e funções
+
 Verificar documentação do broom
 
 ```{r}
@@ -74,4 +66,5 @@ You can add options to executable code like this
 #| echo: false
 
 ```
+
 FIM
